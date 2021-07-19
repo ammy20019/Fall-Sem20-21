@@ -1,0 +1,63 @@
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Products</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css"> 
+        <script type="text/javascript" src="jquery-3.4.0.min.js">
+            </script>
+            <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+            <link rel="stylesheet" type="text/css" href="phpstylesheet.css">
+           <style>
+              .row_style{
+                  margin-top: 75px;
+                  margin-bottom: 40px;
+              }
+          </style>
+    </head>
+    <body>
+          
+             <div class="container row_style">
+                  <div class="row text-center">
+                      <div class="col-md-3 col-sm-6 ">
+                          <div class="thumbnail img-thumbnail">
+                              <img class="img-thumbnail" src="nokiaf2.jpg" alt="camera">
+                              <div class="caption">
+                                  <h1>Nokia 160</h1>
+                                  <p>Price: Rs.700</p>
+                              </div>
+                                <?php if (!isset($_SESSION['email'])) { ?>
+                               <p><a href="login_page.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p> 
+                                
+                                 <a href="cart-add.php?id=1" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+                                  
+                          </div>
+                          
+                      </div>
+                       <div class="col-md-3 col-sm-6 ">
+                          <div class="thumbnail img-thumbnail">
+                              <img class="img-thumbnail" src="nokiaf.jpg" alt="camera">
+                              <div class="caption">
+                                  <h1>Nokia 3350</h1>
+                                  <p>Price: Rs.900</p>
+                              </div>
+                              
+                               <p><a href="login_page.php" role="button" class="btn btn-primary btn-block">Buy Now</a></p> 
+                                
+                                 <a href="cart-add.php?id=2" name="add" value="add" class="btn btn-block btn-primary">Add to cart</a>
+                                  
+                          </div>
+                          
+                      </div>
+                       
+                  </div>
+        </div>
+
+      
+    </body>
+    
+</html>

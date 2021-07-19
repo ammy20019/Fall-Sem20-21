@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<style type="text/css">
+	/* em means parent
+	rem means root parent element
+	vh view port height */
+
+	*{
+		margin: 0px;
+		padding: 0px;
+		box-sizing: border-box;
+	}
+	.box{
+		height:;
+		width: 100%;
+		background-color: cyan;
+		font-size: 40px;
+		border: 3px solid aqua;
+		text-align: center;
+		display: none;
+	}
+	@media screen and (min-width: 300px) and (max-width: 600px){
+		#box1{
+			display: block;
+			background-color: blue;
+		}
+	}
+	@media screen and (min-width: 601px) and (max-width: 900px){
+		#box2{
+			display: block;
+			background-color: red;
+		}
+	}
+	@media screen and (min-width: 901px) and (max-width: 1100px){
+		#box3{
+			display: block;
+			background-color: yellow;
+		}
+	}
+	@media screen and (min-width: 1400px) and (){
+		#box4{
+			display: block;
+			background-color: orange;
+		}
+	}
+
+	p:nth-child(even){
+		width: 200px;
+		background-color: orange;
+		font-size: 50px;
+	}
+</style>
+<body>
+	<div class="box" id="box1">Mobile</div>
+		<div class="box" id="box2">Tab</div>
+		<div class="box" id="box3">Desktop</div>
+	<div class="box" id="box4">Wide Screen</div>
+
+	<p>hello1</p>
+	<p>hello2</p>
+	<p>hello3</p>
+	<p>hello4</p>
+	<p>hello5</p>
+
+
+</body>
+</html>

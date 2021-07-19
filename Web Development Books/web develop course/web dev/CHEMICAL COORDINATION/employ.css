@@ -1,0 +1,13 @@
+details { display : block ;font-size : large ;font-weight : bold ;text-align : center ;color : red; }
+
+employeename { font-size : small ;font-weight : bold ;text-align : center ;color : blue; }
+
+employeeid { font-size : small ;font-weight : bold ;text-align : center ;color : purple; }
+
+department { font-size : small ;font-weight : bold ;text-align : center ;color : green; }
+
+post { font-size : small ;font-weight : bold ;text-align : center ;color : black; }
+
+salary { font-size : small ;font-weight : bold ;text-align : center ;font-family : verdana ;color : red; }
+
+

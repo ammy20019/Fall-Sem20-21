@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Doc</title>
+</head>
+<body>
+	<p id="myp"><h3>This is ammy</h3></p>
+	<button onclick="myfun()">flick click</button>
+
+	<form>
+  Entry:
+  <br>
+  <input type="text" id="idNumber">
+</form>
+<br>
+
+<button type="submit" onclick="myFunction1(list)">Insert at first</button>
+<button type="submit" onclick="myFunction(list)">Insert at last</button>
+<button type="submit" onclick="myFunction2(list)">Delete</button>
+<div id="container">
+  <ul id="list">
+  	<li>Hello i am amit, it's my first entry today at 11th September, 2020</li>
+  </ul>
+</div>
+
+
+
+<script type="text/javascript">
+	let para1 = document.getElementById('myp');
+	function myfun(){
+		para1.innerHTML = "<h1>This is a programmer</h1>";
+		para1.style.backgroundColor='red';
+	}
+	
+//function to add contents at last
+	function myFunction(list){
+    var text = "";
+    var inputs = document.querySelectorAll("input[type=text]");
+    for (var i = 0; i < inputs.length; i++) {
+        text += inputs[i].value;
+    }
+    var li = document.createElement("li");
+    var node = document.createTextNode(text);
+    li.appendChild(node);
+    document.getElementById("list").appendChild(li);
+
+}
+//function to add contents at first
+function myFunction1(list) {
+  var text = "";
+    var inputs = document.querySelectorAll("input[type=text]");
+    for (var i = 0; i < inputs.length; i++) {
+        text += inputs[i].value;
+    }
+    var li = document.createElement("li");
+    var node = document.createTextNode(text);
+    li.appendChild(node);
+document.getElementById("list").insertBefore(li, list.childNodes[0]);
+}
+
+//function to delete Items
+function myFunction2(list){
+var list = document.getElementById("list");   // Get the <ul> element with id="myList"
+list.removeChild(list.childNodes[0]);
+}  
+
+setInterval(()=>{
+	console.log('hey there');
+},500)
+
+setTimeout(()=>{
+	console.log('Yo i AM SECOND there');
+},1000)
+</script>
+
+<script type="text/javascript">
+	for(var i=0;i<8;i++){
+		setTimeout(function(){
+			console.log(i);
+		},i*1000); 
+	}
+
+
+
+
+		var x = document.getElementById("txt");
+		setTimeout(function(){ x.value="2 seconds" }, 2000);
+		setTimeout(function(){ x.value="4 seconds" }, 0);
+		console.log('hello')
+		setTimeout(function(){ x.value="6 seconds" }, 6000);
+
+</script>
+</body>
+</html>

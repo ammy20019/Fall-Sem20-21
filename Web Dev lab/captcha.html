@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Captcha</title>
+</head>
+<body onload="getCaptcha()">
+	<table style="border: 2px solid black;">
+		<tr>
+			<td>Captcha</td>
+			<td>
+				<canvas width="220px" height="60px" style="border: 2px solid grey" id="canvas"></canvas>
+			</td>
+			<td>
+				<button type="button" onclick="getCaptcha()">Refresh</button>
+			</td>
+		</tr>
+		<tr>
+			<td>Enter Captcha</td>
+			<td><input type="text" size="30" id="typedText"></td>
+			<td><button onclick="checkIt()">Check</button></td>
+		</tr>
+	</table>
+
+<script>
+	function getRandIndex(maxLength) {
+		// body...
+		return Math.floor(Math.random()*maxLength);
+	}
+	var data;
+	function getCaptcha() {
+		// body...
+		var cancas=document.getElementById('canvas');
+		var pen=canvas.getContext('2d');
+		var captch = Math.random().toString(36).substring(2,8);
+		pen.font = "30px Georgia";
+		pen.fillStyle = "grey";
+		pen.fillRect(0,0,400,400);
+		pen.fillStyle="orange";
+		maxLength=captch.length;
+		index1 = getRandIndex(maxLength);
+		index2 = getRandIndex(maxLength);
+
+		captch = captch.substring(0,index1-1)+captch[index1].toUpperCase()+captch.substring(index1+1,maxLength);
+		captch = captch.substring(0,index2-1)+captch[index2].toUpperCase()+captch.substring(index2+1,maxLength);
+		data=captch;
+		captch=captch.split('').join(' ');
+		pen.fillText(captch, 40,40);
+	}
+
+	function checkIt() {
+		// body...
+		typedData = document.getElementById('typedText').value;
+		if (typedData==data) {
+			alert('Correct');
+			getCaptcha();
+			document.getElementById('typedText').value="";
+		}
+		else{
+			alert("Incorrect CaptchaTry Again");
+			getCaptcha();
+		}
+	}
+</script>
+
+</body>
+</html>

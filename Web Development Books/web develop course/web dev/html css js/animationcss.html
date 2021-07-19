@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Animation</title>
+</head>
+<style>
+	#nav3{
+		width: 1350px;
+		height: 500px; 
+		background-image: url("images/w3.jpg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 1500px 700px;
+		
+	}
+	#st1{
+		width: 135px;
+		height: 60px;
+		position: relative;
+		background-color: lightblue;
+		-webkit-animation-name:effect;
+		-webkit-animation-duration:30s;
+		-webkit-animation-delay:1.5s;
+		-webkit-animation-iteration-count:2;
+		-webkit-animation-timing-function:ease-in-out;
+		-webkit-animation-direction:alternate;
+		text-transform: capitalize;
+		text-align: center;
+		font-size: 20px;
+	}
+	@-webkit-keyframes effect{
+		0%{background-color: lightblue;
+			left: 0px;
+			top: 0px;}
+		50%{background-color: yellow;
+			left: 1200px;
+			top: 0px;}
+		100%{background-color: lightgreen;opacity: .5;
+			left: 1200px;
+			top: 500px;}
+	}
+	#drdow{
+		padding-left: 643px;
+		padding-top: 450px;
+		height: 10px;
+
+	}
+	#sidenav a{
+		position: absolute;
+		left: -80px;
+		transition: 0.3s;
+		padding: 15px;
+		width: 100px;
+		text-decoration: none;
+		font-size: 20px;
+		color: white;
+		border-radius: 0 5px 5px 0;
+	}
+	#sidenav a:hover{
+		left: 0;
+	}
+	#about{
+		top: 220px;
+		background-color: #2196f3;
+	}
+	#blog{
+		top: 280px;
+		background-color: #2196f3;
+	}
+	#project{
+		top: 340px;
+		background-color: #2196f3;
+	}
+	#contact{
+		top: 400px;
+		background-color:#2196f3;
+	}
+
+</style>
+<body>
+	<h1 align="center">GoKsh</h1>
+<div id="st1">Artrone&reg; <br>Change Forever</div>
+<div id="nav3">
+	<div id="drdow">
+		<div id="sidenav" class="snav">
+			<a href="#" id="about">About</a>
+			<a href="#" id="blog">Blog</a>
+			<a href="#" id="project">Project</a>
+			<a href="#" id="contact">Contact</a>
+			
+		</div>
+		<a href="#"><img height="30px" src="images/drdow.png"></a>
+	</div>
+</div>
+<div>Welcome</div>
+</body>
+</html>

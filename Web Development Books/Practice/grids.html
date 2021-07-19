@@ -1,0 +1,84 @@
+<!DOCTYPE html> 
+<html> 
+
+<head> 
+    <title> 
+        CSS | grid Property 
+    </title> 
+    <style> 
+        .main { 
+            display: grid; 
+            grid-template-columns: auto auto auto auto auto; 
+            grid-template-rows: 1fr 1fr 1fr 1fr 1fr; 
+            grid-gap: 10px; 
+            padding: 5px; 
+        } 
+        
+        .box { 
+            background-color: lightgrey; 
+            text-align: center;
+            padding: 20px 0; 
+            font-size: 30px; 
+        }
+
+        .box:nth-child(1){
+            background-color: #ff66cc;
+            grid-column: 1 / span 3;
+            grid-row: 1 / span 2;
+        }
+        .box:nth-child(4){
+            background-color: #e600e6;
+            grid-column: 1 / span 5;
+        }
+
+        .box:nth-child(2){
+            background-color: #33ffff;
+            grid-column: 4 / span 2;
+        }
+        .box:nth-child(3){
+            background-color: #33ffff;
+            grid-column: 4 / span 2;
+        }
+
+       
+        .box:nth-child(5){
+            background-color: #ff9933;
+        }
+        .box:nth-child(6){
+            background-color: #ff9933;
+        }
+        .box:nth-child(7){
+            background-color: #ff9933;
+        }
+        .box:nth-child(8){
+            background-color: #ff9933;
+        }
+        .box:nth-child(9){
+            background-color: #ff9933;
+        }
+
+
+
+
+    </style> 
+</head> 
+
+<body> 
+    <h1>Layout 1 </h1> 
+
+    <div class="main"> 
+        <div class="box">1</div> 
+        <div class="box">2</div> 
+        <div class="box">3</div> 
+        <div class="box">4</div> 
+        <div class="box">5</div> 
+        <div class="box">6</div> 
+        <div class="box">7</div> 
+        <div class="box">8</div>
+        <div class="box">9</div>  
+    </div>  
+    </div> 
+
+</body> 
+
+</html> 

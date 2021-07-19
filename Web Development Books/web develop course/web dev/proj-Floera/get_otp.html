@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> OTP SMS Mobile Verification</title>
+<link href="sty2.css" type="text/css" rel="stylesheet" />
+</head>
+<body>
+	<script type="text/javascript">
+		function myfun(){
+			var a = document.getElementById('mobile').value;
+			if (a=="3253"){
+				document.getElementById('mssg').innerHTML="Your account has been verified successfully";
+				window.location="placed_or.html";
+				return false;
+			}
+
+			else{
+				document.getElementById('mssg').innerHTML="You entered wrong OTP";
+				return false;
+			}
+			 
+		}
+	</script>
+
+	<div class="container">
+		<div class="error"></div>
+		<form onsubmit="return myfun()" id="frm-mobile-verification">
+			<div class="form-heading">Verifying your bank account</div>
+
+			<div class="form-row">
+				<input type="number" id="mobile" class="form-input"
+					placeholder="Enter the OTP we've sent you" value="">
+			</div>
+			<span id="mssg"></span><br>
+
+			<input type="submit" class="btnSubmit" value="Submit"
+				>
+		</form>
+	</div>
+</body>
+</html>

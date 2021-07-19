@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register Here</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style1.css">
+<body>
+	<h1 id="main_title">TECH FEST 2020</h1>
+	<h4 style="color: white;text-align: center;">Please fill out details to complete registration</h4>
+
+	<div class="form">
+<label class="form_c">Name    :</label>
+<input id="lett" required style="margin-left: 150px;">
+<p class="rq">*Enter alphabets only.</p>
+<p id="error1" class="rq"></p>
+
+
+<label required style="color: white;font-size: 23px;">Gender:</label>
+  <input type="radio" name="gender" style="margin-left: 140px;"><font  style="color: white;font-size: 23px;">Male   </font><input type="radio" name="gender" ><font style="color: white;font-size: 23px;">Female</font><br><br>
+
+
+<label class="form_c">College Name  :</label>
+<input id="lett" required style="margin-left: 75px;">
+<p class="rq">*Enter alphabets only.</p>
+
+<label class="form_c">Contact:</label>
+<input id="numb" required style="margin-left: 140px;">
+<p id="error" class="rq"></p>
+
+<label class="form_c">Course/Programme:</label>
+
+<select name="cars" required style="margin-left: 33px;">
+  <option value="">Btech CSE</option>
+  <option value="">Btech ECE</option>
+  <option value="">Software Engineering</option>
+  <option value="">Commerce</option>
+</select><br><br>
+
+<label class="form_c">Email ID:</label>
+<input id="numb" required style="margin-left: 127px;"><br><br><br>
+
+
+<button type="button" id="button" onclick="myFunction()">Submit</button>
+	</div>
+
+
+<script>
+function myFunction() {
+  var x, text;
+
+  // Get the value of the input field with id="numb"
+  x = document.getElementById("numb").value;
+
+  // If x is Not a Number or less than one or greater than 10
+  if (isNaN(x) || x.length == 10) {
+    text = "Valid";
+  } else {
+    text = "Please enter valid contact number";
+  }
+  document.getElementById("error").innerHTML = text;
+  var letters = /^[A-Za-z]+$/;
+  var y, text;
+  y = document.getElementById("lett").value;
+      if(y.match(letters))
+      {
+      text1='Your name have accepted : you can try another';
+      } else {
+      text1='Please input alphabet characters only';
+      }
+        document.getElementById("error1").innerHTML = text1;
+}
+
+
+// function ValidateEmail(mail) 
+// {
+//  if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(myForm.emailAddr.value))
+//   {
+//     return (true)
+//   }
+//     alert("You have entered an invalid email address!")
+//     return (false)
+// }
+</script>
+</body>
+</html>

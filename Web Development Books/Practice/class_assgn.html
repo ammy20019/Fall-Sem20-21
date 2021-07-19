@@ -1,0 +1,80 @@
+<!doctype html>
+<title>Example</title>
+<style>
+  * {
+    box-sizing: border-box; 
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction:column;
+    margin: 0;
+  }
+
+  .outer-col-2 {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+  }
+  .inner-row {
+    display: flex;
+    flex-direction: row;
+  }
+  .inner-col {
+    flex: 4;
+  }
+  .inner-row article {
+    min-height: 300px;
+  }
+  .inner-row aside {
+    background: beige;
+    flex: 1;
+  }
+  header {
+    text-align: center;
+    background: yellowgreen;
+    height: 100px;
+  }
+  footer {
+    text-align: center;
+    background: yellowgreen;
+    height: 150px
+  }
+  header, footer, article, nav, aside {
+    padding: 15px;
+  }
+</style>
+<body>
+  <div class="outer-col-2">
+    <header><h1>Binod</h1></header>
+    <div class="inner-row">
+            <aside>
+              <h5>Orangutan<h5>
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTog0vqmoaD9BERu-Hfrf688BYTsx637a_ZFg&usqp=CAU">
+              <ul>
+                <li> Yolo Yolo</li>
+                <li> Buku Buku</li>
+                <li> Uilo Uilo</li>
+                <li> Yolo Yolo</li>
+                <li> Buku Buku</li>
+                <li> Uilo Uilo</li>
+                <li> Yolo Yolo</li>
+                <li> Buku Buku</li>
+                <li> Uilo Uilo</li>
+                <li> Yolo Yolo</li>
+                <li> Buku Buku</li>
+                <li> Uilo Uilo</li>
+              </ul>
+            </aside>
+      <div class="inner-col">
+      <article><img src="https://i.pinimg.com/originals/ca/76/0b/ca760b70976b52578da88e06973af542.jpg" style="width: 1050px;height: 400px;"> </article>
+      <footer> ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</footer>
+      </div>
+    </div>
+  </div>
+</body>

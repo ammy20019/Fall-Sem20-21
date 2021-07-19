@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding = "utf-8" ?>
+<?xml-stylesheet href="employ.css" type="text/css" ?>
+<employee>
+<details>
+<employeename> Mukesh Lal </employeename>
+<employeeid> 3pp13399 </employeeid>
+<department> P P 3 </department>
+<post> General Manager </post>
+<salary> 73,000 </salary>
+</details>
+<details>
+<employeename> Durgesh Chandrakar </employeename>
+<employeeid> 2pp23654 </employeeid>
+<department> P P 2 </department>
+<post> Junior Manager </post>
+<salary> 60,500 </salary>
+</details>
+<details>
+<employeename> Pranav Sud </employeename>
+<employeeid> 3pp36868 </employeeid>
+<department> P P 3 </department>
+<post> General Operator </post>
+<salary> 68,000 </salary>
+</details>
+<details>
+<employeename> Piyush Parghan </employeename>
+<employeeid> 7E34677 </employeeid>
+<department> E 4 </department>
+<post> General Manager </post>
+<salary> 87,000 </salary>
+</details>
+</employee>

@@ -1,0 +1,38 @@
+<html>
+<head>
+  <title>Your Website Title</title>
+    <!-- You can use open graph tags to customize link previews.
+    Learn more: https://developers.facebook.com/docs/sharing/webmasters -->
+  <meta property="og:url"           content="https://www.facebook.com/profile.php?id=100006321965196" />
+  <meta property="og:type"          content="website" />
+  <meta property="og:title"         content="Your Website Title" />
+  <meta property="og:description"   content="Your description" />
+  <meta property="og:image"         content="https://www.facebook.com/photo.php?fbid=2080649932155719&set=a.1408455686041817&type=3&theater" />
+</head>
+<body>
+
+  <!-- Load Facebook SDK for JavaScript -->
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.0";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <!-- Your like button code -->
+  <div class="fb-like" 
+    data-href="https://www.facebook.com/profile.php?id=100006321965196" 
+    data-layout="standard" 
+    data-action="like" 
+    data-show-faces="true">
+  </div>
+  <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fprofile.php%3Fid%3D100006321965196&width=10&layout=standard&action=like&size=small&show_faces=true&share=true&height=80&appId" width="10" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+
+  <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v3.3"></script>
+<div class="fb-like" data-href="https://www.facebook.com/profile.php?id=100006321965196" data-width="10" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
+
+</body>
+</html>

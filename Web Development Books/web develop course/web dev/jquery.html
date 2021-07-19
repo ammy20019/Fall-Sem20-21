@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jquery</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<style type="text/css">
+		#circle{
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			margin:15px;
+			background-color: blue;
+
+		}
+	</style>
+</head>
+<body>
+<div id="circle"></div>
+<P>you know who am i</P>
+
+
+<script type="text/javascript">
+	$("#circle").click(function(){
+		$(this).animate({
+			width:"400px",
+		    height:"400px",
+		    marginLeft:"200px",
+		    marginRight:"200px"
+		},2000 , function(){
+			$(this).css("background-color","red");
+		});
+		$("p").html("hey amit u r great");
+		
+	});
+</script>
+</body>
+</html>
